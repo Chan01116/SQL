@@ -141,5 +141,24 @@ select *from member;
 -- 회원정보중에서 회원이 여성이 회원만 이름을 출력하시오
 select membername from member where membergender = 'F'
 
+1-3.
+-- DDL 언어중에 3번째 table 삭제하기
+형식은 drop table 테이블이름;
+
+drop table member;
+
+
+-- 회원번호 5번인 사람의 아이디와 이름 그리고 사는곳을 출력하세요
+select memberid,membername,memberaddr from member where midx = '5'
+
+-- 회원메일중에 네이버 메일을 사용하는 회원정보를 모두 출력해주세요
+select *from member where membereamil like '%naver.com%';
+
+-- 회원메일중에 네이버 메일을 사용하고 대전에 사는 회원정보를 모두 출력해주세요
+select *from member where membereamil like '%naver.com%' and memberaddr = '대전';
+
+
+-- 서울에 살고 성별이 여성인 회원의 정보를 출력해주세요
+select *from member where membergender = 'F' and memberaddr = '서울';
 
 
