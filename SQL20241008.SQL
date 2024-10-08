@@ -1165,7 +1165,7 @@ group by A.midx
 
 
 
-
+select *from member order by midx desc;
 
 
 
